@@ -18,6 +18,8 @@ This should generate the following files :
 
 After receiving the required files run `app.py` locally (scroll further to see how)
 
+---
+
 ## 📁 Project Structure
 
 ```
