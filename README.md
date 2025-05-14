@@ -2,7 +2,21 @@
 
 This project is a comprehensive data science portfolio piece focused on analyzing and predicting house prices across Ireland using real-world data. Leveraging a 2024 housing dataset from Kaggle, it applies exploratory data analysis (EDA), classification, regression, and a user-friendly Streamlit application to showcase the insights and predictions. The aim is to provide both technical and practical value in understanding property trends and forecasting home values using machine learning.
 
+Note: regression_model.pkl could not be uploaded due to size contraints. While running `eda_irish_housing.ipynb` locally, you will generate all required files.
+
 ---
+
+# 📋✔️🧾 Requirements
+
+Files required to run `eda_irish_housing.ipynb` are :
+* `ireland-house-properties-dataset-2024.csv`
+
+This should generate the following files :
+* `cleaned_ireland_house_prices.csv`
+* `classification_model.pkl`
+* `regression_model.pkl`
+
+After receiving the required files run `app.py` locally (scroll further to see how)
 
 ## 📁 Project Structure
 
@@ -11,6 +25,7 @@ This project is a comprehensive data science portfolio piece focused on analyzin
 ├── classification_model.pkl       # Trained classification model (joblib)
 ├── regression_model.pkl           # Trained regression model (joblib)
 ├── app.py                         # Streamlit GUI application
+├── cleaned_ireland_house_prices.csv # Cleaned dataset ready for feature engineering
 ├── ireland-house-properties-dataset-2024.csv # Raw dataset from Kaggle
 └── README.md                      # This file
 ```
@@ -30,7 +45,6 @@ Each component plays a distinct role in building the pipeline from raw data to i
   * County (Dublin, Galway, Cork, etc.)
   * BER Rating (Energy efficiency)
   * Size (in square meters)
-  * Parking availability, Sale Type (new or second-hand)
   * Price (target variable)
 
 This rich dataset allows both regression and classification tasks, offering a versatile platform for modeling.
